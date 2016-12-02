@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>
+      Home Page
+    </title>
+    <link rel = "stylesheet" type="text/css" href="styles.css">
+  </head>
+
+
+  <body>
+    <div id = "checkElement">
+      <div id = "innerblk">
+        <input type="text" placeholder = "Enter text" id="textEntered"> </br></br>
+        <input type="button" value="Check" onclick="validate()"></br></br>
+        <font>Check for Empty : </font><span id = "check" ></span>
+
+        <script type="text/javascript">
+
+        function isEmpty(stringToCheck)
+        {
+          this.str = stringToCheck;
+
+          if (this.str == undefined || this.str == "" || this.str == " "){
+            document.getElementById("check").innerHTML = true;
+            return true;
+          }
+          else {
+            document.getElementById("check").innerHTML = false;
+            return false;
+          }
+
+        }
+
+        function validate()
+        {
+          var isEmptystr = new isEmpty(document.getElementById("textEntered").value);
+          console.log(2);
+          var check = document.getElementById("check");
+          /*
+          if (isEmptystr == true){
+            check.innerHTML = true;
+          }
+          else{
+            check.innerHTML = false;
+          }*/
+        }
+
+        </script>
+
+      </div>
+
+  </body>
+
+</html>

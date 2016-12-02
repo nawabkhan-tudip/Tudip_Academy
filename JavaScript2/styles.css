@@ -1,0 +1,15 @@
+#checkElement{
+  width: 500px;
+  height: 250px;
+  position: relative;
+  margin: auto;
+  top: 20%;
+}
+
+#check{
+  display: inline-block;
+}
+font {
+  font-family: fantasy;
+  font-size: 18px;
+}
