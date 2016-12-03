@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>
+      Home Page
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script>
+    var i = 0;
+      $(document).ready(function(){
+          $(" #textToDisplay ").keydown(function(e){
+                if(e.keyCode == 8){
+                  i--;
+                  $(" #textDisp ").val(i);
+                }
+                else{
+                  i++;
+                  $(" #textDisp ").val(i);
+                }
+          });
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <input type="text" placeholder="Enter Text" id="textToDisplay" ></br>
+    <input type="text" placeholder="Entered Text" id="textDisp">
+
+    <p> Code to display another Text in another text field using jQuery</p>
+
+  </body>
+</html>

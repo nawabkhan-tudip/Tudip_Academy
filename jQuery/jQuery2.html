@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>
+      Home Page
+    </title>
+    <style>
+      p {
+          font-family: fantasy;
+          font-size: 20px;
+          position: relative;
+          top: 20px;
+          left: 25px;
+      }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script>
+      $(document).ready(function(){
+        $(" p ").hover(function(){
+              $( this ).mousemove(function(  ) {
+                $(this).mouseup(function() {
+                    $( this ).css({"color":"black"});
+                  })
+                $(this).mousedown(function() {
+                  $( this ).css({"color":"red"});
+                });
+              });
+        });
+        $(" p ").mouseout(function() {
+          $( this ).css({"color":"black"});
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    
+    <p draggable="true"> Drag Me</p>
+
+  </body>
+</html>
