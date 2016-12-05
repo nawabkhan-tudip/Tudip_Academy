@@ -1,0 +1,31 @@
+#image{
+    position: relative;
+    width:600px;
+    height:500px;
+    margin:auto;
+}
+#likedislike{
+    position: relative;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    top: 5px;
+}
+
+#baby{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    border-radius: 50%;
+}
+#like{
+    position: absolute;
+    left: -100px;
+}
+
+#dislike{
+    position: absolute;
+    left: 50px;
+}
