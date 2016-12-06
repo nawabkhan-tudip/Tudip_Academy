@@ -1,0 +1,45 @@
+
+table, td {
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 5px;
+    margin:auto;
+}
+th{
+    padding: 12px;
+    text-align:center;
+    color: black;
+    border: 1px solid #ddd;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=number]{
+    margin: auto;
+}
+button{
+    width:40px;
+    height:40px;
+    border: 0;
+    background: url("tick.png");
+    background-size: 100%;
+    background-size: 40px auto;
+}
+#container {
+    overflow-x: hidden;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+    width:500px;
+    margin: auto;
+}
+h3{
+    text-align: center;
+}
